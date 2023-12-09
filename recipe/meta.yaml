@@ -1,5 +1,5 @@
 {% set name = "hijridate" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f0d96619dc91dd792ae6b28159b6973a7b4b8a15017106f4cbcd11825549d4af
+  sha256: 430b673aaea12e436107d5eed86470ad70ad2c46623f9b273c86fddae9af0d1b
 
 build:
   number: 0
