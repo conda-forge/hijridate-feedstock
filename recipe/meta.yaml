@@ -6,28 +6,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b47f0b2e5333d5d898c6f3472f5cee4a3f045c82d69c073c7a026f5a7aec5821
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-fancy-pypi-readme
   run:
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
   imports:
     - hijridate
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
