@@ -7,9 +7,11 @@ Home: https://github.com/dralshehri/hijridate
 
 Package license: MIT
 
-Summary: Accurate Hijri-Gregorian dates converter based on the Umm al-Qura calendar
+Summary: Accurate Hijri-Gregorian dates converter based on Umm al-Qura calendar
 
 Documentation: https://hijridate.readthedocs.io/
+
+HijriDate is a Python package for converting between Hijri and Gregorian dates using the Umm al-Qura calendar. The package has been thoroughly verified and tested against original references to ensure its accuracy and reliability. It has an intuitive design, allows rich comparison and basic formatting of Hijri dates, and is optimized for performance.
 
 Current build status
 ====================
